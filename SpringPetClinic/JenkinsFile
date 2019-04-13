@@ -5,7 +5,7 @@ node {
 	}
 	
 	stage('package') {
-		sh label: ", script: 'mvn package'
+		sh 'mvn package'
 	}
 	
 	stage('artifacts') {
